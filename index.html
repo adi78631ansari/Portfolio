@@ -4,133 +4,227 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Adiba Ansari • Portfolio</title>
-  <meta name="description" content="Adiba Ansari – Data Analyst & Business Analyst portfolio: Identity Operations (ANZ Plus), AML/CTF, Fraud Risk, Power BI, SQL, Tableau. Focus on business processes, improvement projects, data entry accuracy, and using data for actionable recommendations." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <link rel="icon" href="favicon.ico">
+  <meta name="description" content="Adiba Ansari – Data & Business Analyst portfolio: Banking (ANZ Plus), Identity Operations, AML/CTF, Fraud Risk, Power BI, SQL, Tableau, Process Improvement. Monash Professional Year (ICT)." />
+  <!-- Font: Aptos Narrow isn't hosted on Google Fonts; Inter Tight is a close web-safe alternative -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
-    :root{--bg:#0b0d10;--card:#12161b;--muted:#9fb0c3;--text:#e8f0f8;--accent:#5eead4;}
+    :root{
+      --bg:#F7ECF1;          /* light burgundy tint for strong contrast with black text */
+      --bg2:#F3E3EA;         /* slightly deeper tint for sections */
+      --card:#ffffff;        /* cards on light background */
+      --ink:#121212;         /* primary text (black-ish) */
+      --muted:#5a4e56;       /* muted text */
+      --accent:#7A1436;      /* rich burgundy */
+      --accent-2:#A52B50;    /* lighter burgundy */
+      --line:#ead3dc;        /* subtle border */
+      --chip:#FAF4F7;        /* chip bg */
+    }
     *{box-sizing:border-box}
-    body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif;background:linear-gradient(180deg,#0b0d10,#0f1318);color:var(--text);}    
-    a{color:inherit;text-decoration:none}
-    .wrap{max-width:1100px;margin:0 auto;padding:28px}
-    header{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 0}
+    html,body{height:100%}
+    body{margin:0;font-family:"Aptos Narrow","Inter Tight","Arial Narrow",system-ui,Segoe UI,Roboto,Arial,sans-serif;background:linear-gradient(180deg,var(--bg),var(--bg2));color:var(--ink)}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:1120px;margin:0 auto;padding:28px}
+    header{display:flex;align-items:center;justify-content:space-between;padding:8px 0}
     .brand{font-weight:800;letter-spacing:.2px}
-    nav a{color:var(--muted);margin-left:18px}
-    nav a:hover{color:#fff}
-    .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center;padding:28px 0}
+    nav a{margin-left:18px;color:var(--ink)}
+    nav a:hover{color:var(--accent)}
+
+    /* Hero */
+    .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center;padding:22px 0}
     @media (max-width:900px){.hero{grid-template-columns:1fr}}
-    .h-title{font-size:40px;line-height:1.1;margin:0 0 12px}
-    .muted{color:var(--muted)}
-    .pill{display:inline-block;padding:8px 12px;border:1px solid #223140;border-radius:999px;margin:6px 6px 0 0;color:var(--muted);font-size:13px}
-    .btn{display:inline-block;background:var(--accent);color:#083b37;font-weight:700;border-radius:12px;padding:12px 18px;margin-right:10px}
-    .btn.ghost{background:transparent;border:1px solid #1f2a33;color:var(--text)}
-    section{padding:32px 0}
-    .section-title{font-size:20px;margin:0 0 16px}
+    h1{font-size:44px;line-height:1.08;margin:0 0 12px}
+    .lead{font-size:18px;color:var(--muted)}
+    .btn{display:inline-block;background:var(--accent);color:#fff;font-weight:700;border-radius:12px;padding:12px 18px;margin-right:10px;border:1px solid var(--accent)}
+    .btn.ghost{background:transparent;color:var(--accent);border:1px solid var(--accent)}
+    .pills{margin-top:10px}
+    .pill{display:inline-block;padding:8px 12px;border:1px solid var(--line);background:var(--chip);border-radius:999px;margin:6px 6px 0 0;color:var(--muted);font-size:13px}
+    .photo{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:20px;border:3px solid var(--line);box-shadow:0 8px 24px rgba(122,20,54,.15)}
+
+    /* Sections */
+    section{padding:30px 0}
+    .section-title{font-size:24px;margin:0 0 14px}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px}
     .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-    @media (max-width:900px){.grid{grid-template-columns:1fr}}
-    .card{background:var(--card);border:1px solid #1b232c;border-radius:16px;padding:18px;transition:transform .15s ease, border .15s ease}
-    .card:hover{transform:translateY(-2px);border-color:#2b3947}
-    .card h3{margin:6px 0 8px;font-size:18px}
-    .tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
-    .tag{font-size:12px;background:#0b2326;border:1px solid #1c3c3f;padding:6px 8px;border-radius:999px;color:#93e1da}
-    .two-col{display:grid;grid-template-columns:1fr 1fr;gap:18px}
-    @media (max-width:900px){.two-col{grid-template-columns:1fr}}
-    footer{padding:28px 0;color:var(--muted);border-top:1px solid #17202a;margin-top:28px}
-    .link{color:#a7f3d0}
+    @media (max-width:1000px){.grid{grid-template-columns:1fr 1fr}}
+    @media (max-width:700px){.grid{grid-template-columns:1fr}}
+
+    /* Experience */
+    .xp h3{margin:6px 0 8px}
+    .xp small{color:var(--muted)}
+    .xp ul{margin:10px 0 0 18px}
+
+    /* Footer */
+    footer{padding:26px 0;color:var(--muted);border-top:1px solid var(--line);margin-top:28px}
   </style>
 </head>
 <body>
   <div class="wrap">
     <header>
       <div class="brand">Adiba Ansari</div>
-      <nav>
+      <nav aria-label="Primary">
+        <a href="#about">About</a>
         <a href="#projects">Projects</a>
         <a href="#experience">Experience</a>
         <a href="#skills">Skills</a>
+        <a href="#certs">Certifications</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
 
-    <section class="hero">
+    <!-- HERO / ABOUT -->
+    <section id="about" class="hero">
       <div>
-        <h1 class="h-title">Data Analyst – Banking | Fraud Risk | BI &amp; Analytics</h1>
-        <p class="muted">I develop and implement smarter <strong>business processes</strong>, translate complex datasets into <strong>actionable recommendations</strong>, and solve real <strong>business challenges</strong> through <strong>analysis and optimization</strong>. Comfortable with <strong>process design</strong>, <strong>process analysis</strong>, and <strong>management systems</strong>—with hands-on AML/CTF and Identity Operations experience at ANZ Plus.</p>
+        <h1>Data Analyst in Banking — fraud risk, BI & analytics</h1>
+        <p class="lead"><strong>Intro:</strong> I design lean <em>business processes</em>, turn complex data into <em>actionable recommendations</em>, and ship improvements end‑to‑end. From identity operations at ANZ Plus to marketing & supply-chain analytics, I <strong>develop and implement</strong> solutions that tackle real <em>business challenges</em> and drive <strong>operational excellence</strong>.</p>
         <div style="margin:14px 0 8px">
-          <!-- No resume yet; make this a mailto CTA for now -->
-          <a class="btn" href="mailto:adi786ansari31@gmail.com?subject=Resume%20Request%20-%20Adiba%20Ansari">Request Resume</a>
-          <a class="btn ghost" href="#projects">View Projects</a>
+          <a class="btn" href="#projects">View Projects</a>
+          <a class="btn ghost" href="#experience">Experience</a>
         </div>
-        <div>
-          <span class="pill">Power BI</span>
+        <div class="pills">
+          <span class="pill">Power BI (DAX)</span>
           <span class="pill">SQL</span>
+          <span class="pill">Excel (Advanced)</span>
           <span class="pill">Tableau</span>
           <span class="pill">Process Design</span>
-          <span class="pill">Risk Management</span>
+          <span class="pill">Risk & AML/CTF</span>
           <span class="pill">Change Management</span>
         </div>
       </div>
+      <div>
+        <!-- Replace photo.jpg with your actual headshot placed in repo root -->
+        <img class="photo" src="photo.jpg" alt="Adiba Ansari portrait">
+      </div>
+    </section>
+
+    <!-- AT A GLANCE -->
+    <section>
       <div class="card">
-        <h3>At a glance</h3>
-        <p class="muted">Identity Operations (ANZ Plus). AML/CTF, fraud mitigation, stakeholder comms, and data-driven ops.</p>
-        <ul class="muted">
-          <li>Led <strong>improvement projects</strong> that reduced ID-issue resolution time by ~30%</li>
-          <li>Built dashboards to <strong>use data</strong> for retention and closed-loop monitoring</li>
-          <li>Known for forward-thinking <strong>innovation</strong> and change facilitation</li>
+        <h2 class="section-title">At a glance</h2>
+        <ul style="margin:0 0 0 18px">
+          <li><strong>Banking & Identity Ops:</strong> 2.5+ years at ANZ Plus (AML/CTF, fraud mitigation, governance) with dashboards that <strong>use data</strong> for closed‑loop monitoring.</li>
+          <li><strong>Speed & Scale:</strong> Led <strong>improvement projects</strong> that reduced identity‑issue resolution time by ~30% in 6 months via Agile, automation, and targeted playbooks.</li>
+          <li><strong>Commercial impact:</strong> Delivered ROI‑focused segmentation, lifecycle mapping, and KPI tracking across fintech and pharma, aligning analytics with business goals.</li>
+          <li><strong>Forward‑thinking & facilitation:</strong> Known for <em>innovation</em>, workshop facilitation, and cross‑functional delivery that turns analysis into adoption.</li>
         </ul>
       </div>
     </section>
 
+    <!-- PROJECTS -->
     <section id="projects">
       <h2 class="section-title">Selected Projects</h2>
       <div class="grid">
-        <!-- Project 1: TripAdvisor Analytics -->
         <article class="card">
-          <h3>Las Vegas Hotel Review Analytics</h3>
-          <p class="muted"><strong>Challenge:</strong> Identify top hotels and marketing periods. <strong>Approach:</strong> Cohort &amp; review analysis with dashboards; <strong>use data</strong> to create <strong>actionable recommendations</strong>. <strong>Result:</strong> Clear target segments and timing for promotions.</p>
-          <div class="tags">
-            <span class="tag">Tableau</span><span class="tag">Cohort Analysis</span><span class="tag">Data Mining</span>
-          </div>
-          <p><a class="link" href="https://wp.deakin.edu.au/staticSites/DeakinUniversity-3882199_1316455_s221464813/deakinsso_DeakinUniversity-3882199_1316455_s221464813_20230609_190343" target="_blank" rel="noopener">View project →</a></p>
+          <h3>TripAdvisor Hotel Review Analytics</h3>
+          <p class="lead">Interactive Tableau dashboards analysing 21 Las Vegas hotels; surfaced peak seasons, traveller types, and promo windows; produced <strong>actionable recommendations</strong> for targeting.</p>
+          <p><a href="https://wp.deakin.edu.au/staticSites/DeakinUniversity-3882199_1316455_s221464813/deakinsso_DeakinUniversity-3882199_1316455_s221464813_20230609_190343" target="_blank" rel="noopener">View project →</a></p>
         </article>
-        <!-- Placeholder for more projects -->
         <article class="card">
-          <h3>Supply Chain and Distribution Analytics</h3>
-          <p class="muted">Analyzed Data & insights about 400,000+ records across 3,388 stockists , improving inventory management, procurement, and stockist classification using Excel, resulting in a 25% increase in forecasting accuracy. Improved implementation of demand planning and reduced stockouts by 30% across 17 divisions, aligning inventory with market trends and delivering measurable business impact.<strong>Result:</strong> Faster triage and fewer false positives. (Private assets summarized.)</p>
-          <div class="tags"><span class="tag">Power BI</span><span class="tag">DAX</span><span class="tag">Operational Excellence</span></div>
+          <h3>E‑commerce Analysis (Munchy’s)</h3>
+          <p class="lead">Market basket analysis, shipping optimization, dual‑axis/heat‑map visuals in Tableau; recommended a new warehouse location and upsell/cross‑sell plays.</p>
         </article>
+        <article class="card">
+          <h3>Capstone: Predicting Customer Membership</h3>
+          <p class="lead">Analysed 330k+ records using Python (ELT), Power BI, and Excel to model retention and revenue opportunities; built dashboards for marketing decisions.</p>
+        </article>
+        <article class="card">
+          <h3>Analyzing Unicorn Companies</h3>
+          <p class="lead">Benchmarked industries by unicorn creation (2019‑2021), total counts, and average valuations to highlight growth verticals.</p>
+        </article>
+        <article class="card">
+          <h3>Supply Chain & Distribution Analytics</h3>
+          <p class="lead">Worked with 400k+ records across 3,388 stockists; improved forecasting accuracy by 25% and reduced stockouts by 30% through inventory insights.</p>
+        </article>
+      </div>
     </section>
 
+    <!-- EXPERIENCE -->
     <section id="experience">
       <h2 class="section-title">Experience</h2>
-      <div class="card">
-        <h3>Identity Operations Agent — ANZ Bank (ANZ Plus)</h3>
-        <p class="muted">12/2022 — Present • Docklands, VIC</p>
+      <div class="card xp">
+        <h3>Data Analyst — 4D Lotto Management Pty Ltd</h3>
+        <small>Internship • Port Melbourne, VIC • Jul 2025 – Present</small>
         <ul>
-          <li>Monitor AML/CTF, fraud, governance; <strong>use data</strong> from dataflow tracking to enhance analytics and fraud detection.</li>
-          <li>Lead <strong>improvement projects</strong> (Agile, automation) that cut ID-issue time by ~30% and strengthened closed-loop monitoring.</li>
-          <li><strong>Develop and implement</strong> <strong>business processes</strong> and <strong>actionable recommendations</strong> that boost adoption and retention.</li>
-          <li>Ensure accurate <strong>data entry</strong>, cleansing, and controls for compliant, scalable workflows (<strong>operational excellence</strong>).</li>
+          <li>Built Power BI dashboards to track analytics projects, campaigns, and customer segmentation; delivered ROI‑focused insights via reporting and KPIs.</li>
+          <li>Mapped customer lifecycles and documented dataflows; implemented scalable systems with robust validation under tight deadlines.</li>
+          <li>Partnered with SMEs to monitor KPIs, trends, and retention strategies; strengthened segmentation and marketing support activities.</li>
+        </ul>
+      </div>
+      <div class="card xp">
+        <h3>Identity Operations Agent — ANZ Bank (ANZ Plus)</h3>
+        <small>Full‑time • Docklands, VIC • Dec 2022 – Present</small>
+        <ul>
+          <li>Managed <strong>business operations</strong> by monitoring AML/CTF, fraud, and governance; leveraged dataflow tracking to <strong>use data</strong> for fraud detection and analytics.</li>
+          <li>Delivered <strong>improvement projects</strong> that cut identity‑issue resolution time by ~30% within 6 months using Agile, automation, and mitigation strategies.</li>
+          <li>Supported customer lifecycle management, retention strategies, and process adoption to improve efficiency and outcomes.</li>
+          <li>Ensured accurate <strong>data entry</strong>, process modelling, and data cleansing for compliant, scalable workflows.</li>
+          <li>Enhanced onboarding with data‑driven insights that improved retention and operational performance.</li>
+        </ul>
+      </div>
+      <div class="card xp">
+        <h3>Business Analyst — Alembic Pharmaceuticals</h3>
+        <small>Internship • Mumbai, India • May 2019 – Oct 2021</small>
+        <ul>
+          <li>Built BI dashboards and reports across sales/inventory data to improve segmentation, campaign effectiveness, and performance tracking.</li>
+          <li>Performed root‑cause and quantitative analyses that improved customer retention & stockist efficiency by 20%.</li>
+          <li>Developed scalable process flows and automated reporting aligned with retention strategies and KPIs.</li>
+          <li>Analysed 400k+ records across 3,388 stockists; improved forecasting accuracy by 25% and reduced stockouts by 30%.</li>
+        </ul>
+      </div>
+      <div class="card xp">
+        <h3>Marketing Analyst — Alembic Pharmaceuticals</h3>
+        <small>Internship • Mumbai, India</small>
+        <ul>
+          <li>Tracked campaign performance and prepared business reviews to guide strategy; evaluated touchpoints to lift conversion and reporting quality.</li>
+          <li>Co‑designed multi‑channel marketing strategies and supported execution end‑to‑end with segmentation and funnel analysis.</li>
+          <li>Supported research and re‑engagement efforts using Google Analytics and web analytics tooling.</li>
         </ul>
       </div>
     </section>
 
-    <section id="skills" class="two-col">
-      <div class="card">
-        <h3>Skills</h3>
-        <p class="muted">Analysis &amp; optimization, process analysis/design, risk management, change management, management strategy, facilitation.</p>
-      </div>
-      <div class="card">
-        <h3>Tools</h3>
-        <p class="muted">Power BI (DAX), SQL, Excel, Tableau, GitHub, JIRA/Confluence, ServiceNow.</p>
+    <!-- SKILLS & TOOLS -->
+    <section id="skills">
+      <h2 class="section-title">Skills & Tools</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Skills</h3>
+          <p class="lead">Analysis & optimization, requirements gathering, process analysis/design, dashboarding & storytelling, data quality & governance, risk management (AML/CTF, fraud), change management, stakeholder facilitation, management strategy, problem solving, operational excellence.</p>
+        </div>
+        <div class="card">
+          <h3>Tools</h3>
+          <p class="lead">Power BI (DAX), SQL, Excel (Power Query), Tableau, Python (ELT basics), Salesforce (CRM), Google Analytics, JIRA/Confluence, ServiceNow, GitHub, OneNote, PowerPoint.</p>
+        </div>
       </div>
     </section>
 
+    <!-- EDUCATION & CERTS -->
+    <section id="certs">
+      <h2 class="section-title">Education & Certifications</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Master of Business Analytics (Information Systems)</h3>
+          <p class="lead">Deakin University • Melbourne, VIC • 2022 – 2024</p>
+        </div>
+        <div class="card">
+          <h3>MBA in Pharmaceutical Technology</h3>
+          <p class="lead">SVKM’s NMIMS • Mumbai, India • 2021 – 2022</p>
+        </div>
+        <div class="card">
+          <h3>Bachelor’s in Pharmacy</h3>
+          <p class="lead">SVKM’s NMIMS • Mumbai, India • 2017 – 2021</p>
+        </div>
+        <div class="card">
+          <h3>Monash Professional Year Program (ICT)</h3>
+          <p class="lead">2024 – 2025 • Coursework + 12‑week internship; professional development, workplace readiness, and communication.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
     <section id="contact">
       <h2 class="section-title">Contact</h2>
       <div class="card">
-        <p>LinkedIn: <a class="link" href="https://www.linkedin.com/in/adiba-ansari-b574811a7/" target="_blank" rel="noopener">adiba-ansari</a></p>
-        <p>Email: <a class="link" href="mailto:adi786ansari31@gmail.com">Adiba Ansari </a></p>
+        <p>Email: <a href="mailto:YOUR_EMAIL_HERE">YOUR_EMAIL_HERE</a> • LinkedIn: <a href="https://www.linkedin.com/in/adiba-ansari-b574811a7/" target="_blank" rel="noopener">adiba-ansari</a></p>
       </div>
     </section>
 
