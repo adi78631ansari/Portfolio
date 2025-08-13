@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Adiba Ansari • Portfolio</title>
+  <meta name="description" content="Business/Data Analyst portfolio: Identity Operations (ANZ Plus), AML/CTF, Power BI, SQL, Tableau." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.ico">
+  <style>
+    :root{--bg:#0b0d10;--card:#12161b;--muted:#9fb0c3;--text:#e8f0f8;--accent:#5eead4;}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif;background:linear-gradient(180deg,#0b0d10,#0f1318);color:var(--text);}
+    a{color:inherit;text-decoration:none}
+    .wrap{max-width:1100px;margin:0 auto;padding:28px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 0}
+    .brand{font-weight:800;letter-spacing:.2px}
+    nav a{color:var(--muted);margin-left:18px}
+    nav a:hover{color:#fff}
+    .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center;padding:28px 0}
+    @media (max-width:900px){.hero{grid-template-columns:1fr}}
+    .h-title{font-size:40px;line-height:1.1;margin:0 0 12px}
+    .muted{color:var(--muted)}
+    .pill{display:inline-block;padding:8px 12px;border:1px solid #223140;border-radius:999px;margin:6px 6px 0 0;color:var(--muted);font-size:13px}
+    .btn{display:inline-block;background:var(--accent);color:#083b37;font-weight:700;border-radius:12px;padding:12px 18px;margin-right:10px}
+    .btn.ghost{background:transparent;border:1px solid #1f2a33;color:var(--text)}
+    section{padding:32px 0}
+    .section-title{font-size:20px;margin:0 0 16px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    @media (max-width:900px){.grid{grid-template-columns:1fr}}
+    .card{background:var(--card);border:1px solid #1b232c;border-radius:16px;padding:18px;transition:transform .15s ease, border .15s ease}
+    .card:hover{transform:translateY(-2px);border-color:#2b3947}
+    .card h3{margin:6px 0 8px;font-size:18px}
+    .tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+    .tag{font-size:12px;background:#0b2326;border:1px solid #1c3c3f;padding:6px 8px;border-radius:999px;color:#93e1da}
+    .two-col{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    @media (max-width:900px){.two-col{grid-template-columns:1fr}}
+    footer{padding:28px 0;color:var(--muted);border-top:1px solid #17202a;margin-top:28px}
+    .link{color:#a7f3d0}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">Adiba Ansari</div>
+      <nav>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div>
+        <h1 class="h-title">Business & Data Analyst focused on identity operations, risk, and decision intelligence.</h1>
+        <p class="muted">I help banks **develop and implement** better **business processes**, translate data into **actionable recommendations**, and solve real **business challenges** with **analysis and optimization**.</p>
+        <div style="margin:14px 0 8px">
+          <a class="btn" href="YOUR_RESUME.pdf" target="_blank" rel="noopener">Download Resume</a>
+          <a class="btn ghost" href="#projects">View Projects</a>
+        </div>
+        <div>
+          <span class="pill">Power BI</span>
+          <span class="pill">SQL</span>
+          <span class="pill">Tableau</span>
+          <span class="pill">Process Design</span>
+          <span class="pill">Risk Management</span>
+          <span class="pill">Change Management</span>
+        </div>
+      </div>
+      <div class="card">
+        <h3>At a glance</h3>
+        <p class="muted">2.5+ years @ ANZ Plus (Identity Operations). AML/CTF, fraud mitigation, stakeholder comms, and data-driven ops.</p>
+        <ul class="muted">
+          <li>Cut ID issue resolution time by 30% via **improvement projects**</li>
+          <li>Built dashboards to **use data** for retention and closed-loop monitoring</li>
+          <li>Known for **forward-thinking** and **innovation** on process change</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2 class="section-title">Selected Projects</h2>
+      <div class="grid">
+        <!-- Project 1 -->
+        <article class="card">
+          <h3>Fraud Signal Dashboard (ANZ Plus)</h3>
+          <p class="muted"><strong>Challenge:</strong> Escalation blind spots. <strong>Approach:</strong> Joined ID, device, and session logs; DAX measures for weekly risk. <strong>Result:</strong> 18% faster triage, measurable dip in false positives.</p>
+          <div class="tags">
+            <span class="tag">Power BI</span><span class="tag">DAX</span><span class="tag">Operational Excellence</span>
+          </div>
+          <p><a class="link" href="LINK_TO_DASHBOARD" target="_blank">View dashboard →</a></p>
+        </article>
+        <!-- Project 2 -->
+        <article class="card">
+          <h3>Customer Churn Analysis (Databel)</h3>
+          <p class="muted"><strong>Challenge:</strong> Rising churn. <strong>Approach:</strong> **Data mining** + cohort analysis; **actionable recommendations** for retention. <strong>Impact:</strong> Target list with 12% higher save rate.</p>
+          <div class="tags">
+            <span class="tag">SQL</span><span class="tag">Cohorts</span><span class="tag">Process Analysis</span>
+          </div>
+          <p><a class="link" href="LINK_TO_CASE_STUDY" target="_blank">Read case →</a></p>
+        </article>
+        <!-- Project 3 -->
+        <article class="card">
+          <h3>KYC Ops Improvements</h3>
+          <p class="muted"><strong>Develop & implement</strong> SOP changes across **management systems**; reduced rework via checklist + QA loop; documented **management strategy** for scaling.</p>
+          <div class="tags">
+            <span class="tag">Change Management</span><span class="tag">Process Design</span><span class="tag">Risk Management</span>
+          </div>
+          <p><a class="link" href="LINK_TO_DOC_OR_GITHUB" target="_blank">Artifacts →</a></p>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2 class="section-title">Experience</h2>
+      <div class="card">
+        <h3>Identity Operations Agent — ANZ Bank (ANZ Plus)</h3>
+        <p class="muted">12/2022 — Present • Docklands, VIC</p>
+        <ul>
+          <li>Monitor AML/CTF, fraud, governance; **use data** from dataflow tracking to enhance analytics and fraud detection.</li>
+          <li>Lead **improvement projects** (Agile, automation) that cut ID issue time by 30% and strengthened closed-loop monitoring.</li>
+          <li>**Develop and implement** **business processes** and **actionable recommendations** that boost adoption and retention.</li>
+          <li>Ensure accurate **data entry**, cleansing, and controls for compliant, scalable workflows (**operational excellence**).</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="skills" class="two-col">
+      <div class="card">
+        <h3>Skills</h3>
+        <p class="muted">Analysis & optimization, process analysis/design, risk management, change management, management strategy, facilitation.</p>
+      </div>
+      <div class="card">
+        <h3>Tools</h3>
+        <p class="muted">Power BI (DAX), SQL, Excel, Tableau, GitHub, JIRA/Confluence, ServiceNow.</p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2 class="section-title">Contact</h2>
+      <div class="card">
+        <p>Email: <a class="link" href="mailto:YOUR_EMAIL">YOUR_EMAIL</a> · LinkedIn: <a class="link" href="YOUR_LINKEDIN" target="_blank">Profile</a> · GitHub/Tableau: <a class="link" href="YOUR_GITHUB_OR_TABLEAU" target="_blank">Work</a></p>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="y"></span> Adiba Ansari · Built with HTML/CSS · Deployed on GitHub Pages
+    </footer>
+  </div>
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>
