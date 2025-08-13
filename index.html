@@ -1,4 +1,4 @@
-S<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
@@ -56,6 +56,14 @@ S<!DOCTYPE html>
 
     /* Footer */
     footer{padding:26px 0;color:var(--muted);border-top:1px solid var(--line);margin-top:28px}
+      /* Bulleted lists */
+    ul.bullets{margin:10px 0 0 18px}
+    ul.bullets li{margin:6px 0}
+
+    /* Education rows with years aligned to the right */
+    .edu-row{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+    .edu-row h3{margin:0}
+    .edu-years{color:var(--muted);font-weight:600;white-space:nowrap}
   </style>
 </head>
 <body>
@@ -75,7 +83,7 @@ S<!DOCTYPE html>
     <!-- HERO / ABOUT -->
     <section id="about" class="hero">
       <div>
-        <h1>Data Analyst in Banking — fraud risk, BI & analytics</h1>
+        <h1>Data Analyst - BI & analytics</h1>
         <p class="lead"><strong>Intro:</strong> I design lean <em>business processes</em>, turn complex data into <em>actionable recommendations</em>, and ship improvements end‑to‑end. From identity operations at ANZ Plus to marketing & supply-chain analytics, I <strong>develop and implement</strong> solutions that tackle real <em>business challenges</em> and drive <strong>operational excellence</strong>.</p>
         <div style="margin:14px 0 8px">
           <a class="btn" href="#projects">View Projects</a>
@@ -117,6 +125,7 @@ S<!DOCTYPE html>
         <article class="card">
           <h3>TripAdvisor Hotel Review Analytics</h3>
           <p class="lead">Interactive Tableau dashboards analysing 21 Las Vegas hotels; surfaced peak seasons, traveller types, and promo windows; produced <strong>actionable recommendations</strong> for targeting.</p>
+          <p><a href="https://wp.deakin.edu.au/staticSites/DeakinUniversity-3882199_1316455_s221464813/deakinsso_DeakinUniversity-3882199_1316455_s221464813_20230609_190343" target="_blank" rel="noopener">View project →</a></p>
         </article>
         <article class="card">
           <h3>E‑commerce Analysis (Munchy’s)</h3>
@@ -187,11 +196,36 @@ S<!DOCTYPE html>
       <div class="grid">
         <div class="card">
           <h3>Skills</h3>
-          <p class="lead">Analysis & optimization, requirements gathering, process analysis/design, dashboarding & storytelling, data quality & governance, risk management (AML/CTF, fraud), change management, stakeholder facilitation, management strategy, problem solving, operational excellence.</p>
+          <ul class="bullets">
+            <li>Analysis & optimization</li>
+            <li>Requirements gathering</li>
+            <li>Process analysis & design</li>
+            <li>Dashboarding & storytelling</li>
+            <li>Data quality & governance</li>
+            <li>Risk management (AML/CTF, fraud)</li>
+            <li>Change management</li>
+            <li>Stakeholder facilitation</li>
+            <li>Management strategy</li>
+            <li>Problem solving</li>
+            <li>Operational excellence</li>
+          </ul>
         </div>
         <div class="card">
           <h3>Tools</h3>
-          <p class="lead">Power BI (DAX), SQL, Excel (Power Query), Tableau, Python (ELT basics), Salesforce (CRM), Google Analytics, JIRA/Confluence, ServiceNow, GitHub, OneNote, PowerPoint.</p>
+          <ul class="bullets">
+            <li>Power BI (DAX)</li>
+            <li>SQL</li>
+            <li>Excel (Power Query)</li>
+            <li>Tableau</li>
+            <li>Python (ELT basics)</li>
+            <li>Salesforce (CRM)</li>
+            <li>Google Analytics</li>
+            <li>JIRA / Confluence</li>
+            <li>ServiceNow</li>
+            <li>GitHub</li>
+            <li>OneNote</li>
+            <li>PowerPoint</li>
+          </ul>
         </div>
       </div>
     </section>
@@ -201,20 +235,32 @@ S<!DOCTYPE html>
       <h2 class="section-title">Education & Certifications</h2>
       <div class="grid">
         <div class="card">
-          <h3>Master of Business Analytics (Information Systems)</h3>
-          <p class="lead">Deakin University • Melbourne, VIC • 2022 – 2024</p>
+          <div class="edu-row">
+            <h3>Master of Business Analytics (Information Systems)</h3>
+            <span class="edu-years">2022–2024</span>
+          </div>
+          <p class="lead">Deakin University • Melbourne, VIC</p>
         </div>
         <div class="card">
-          <h3>MBA in Pharmaceutical Technology</h3>
-          <p class="lead">SVKM’s NMIMS • Mumbai, India • 2021 – 2022</p>
+          <div class="edu-row">
+            <h3>MBA in Pharmaceutical Technology</h3>
+            <span class="edu-years">2021–2022</span>
+          </div>
+          <p class="lead">SVKM’s NMIMS • Mumbai, India</p>
         </div>
         <div class="card">
-          <h3>Bachelor’s in Pharmacy</h3>
-          <p class="lead">SVKM’s NMIMS • Mumbai, India • 2017 – 2021</p>
+          <div class="edu-row">
+            <h3>Bachelor’s in Pharmacy</h3>
+            <span class="edu-years">2017–2021</span>
+          </div>
+          <p class="lead">SVKM’s NMIMS • Mumbai, India</p>
         </div>
         <div class="card">
-          <h3>Monash Professional Year Program (ICT)</h3>
-          <p class="lead">2024 – 2025 • Coursework + 12‑week internship; professional development, workplace readiness, and communication.</p>
+          <div class="edu-row">
+            <h3>Monash Professional Year Program (ICT)</h3>
+            <span class="edu-years">2024–2025</span>
+          </div>
+          <p class="lead">Coursework + 12‑week internship; professional development, workplace readiness, and communication.</p>
         </div>
       </div>
     </section>
@@ -223,7 +269,7 @@ S<!DOCTYPE html>
     <section id="contact">
       <h2 class="section-title">Contact</h2>
       <div class="card">
-        <p>Email: <a href="mailto:adi786ansari31@gmail.com">Email Me!</a> • LinkedIn: <a href="https://www.linkedin.com/in/adiba-ansari-b574811a7/" target="_blank" rel="noopener">adiba-ansari</a></p>
+        <p>Email Me At: <a href="mailto:adi786ansari31@gmail.com">Aviva</a> • Let's Connect on LinkedIn: <a href="https://www.linkedin.com/in/adiba-ansari-b574811a7/" target="_blank" rel="noopener">Adiba Ansari</a></p>
       </div>
     </section>
 
